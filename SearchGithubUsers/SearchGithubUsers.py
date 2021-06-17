@@ -19,7 +19,6 @@ def index():
             return render_template('index.html', profile=user_info, repos_info=repos_info)
     else:
         return render_template('index.html')
-
-
+ 
 if __name__ == "__main__":
     app.run(debug=True)
