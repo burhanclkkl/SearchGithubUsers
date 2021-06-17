@@ -4,7 +4,6 @@ import requests
 app = Flask(__name__)
 base_url = 'https://api.github.com/users/'
 
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
